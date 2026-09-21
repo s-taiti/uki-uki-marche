@@ -199,6 +199,7 @@ section, article[id] { scroll-margin-top: 28px; }
 body:has(.poster-dialog[open]) { overflow: hidden; }
 
 .access { background: var(--blue); color: white; }
+.access a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font: inherit !important; }
 .access .section { padding-top: 80px; padding-bottom: 80px; }
 .access h2, .access h3, .access .section-label { color: white; }
 .access h2 { font-size: clamp(28px, 3vw, 40px); }
@@ -280,21 +281,21 @@ footer>small { font-size: 9px; color: var(--muted); margin-left: auto; white-spa
   .header nav { gap: 19px; }
   .header nav a { font-size: 11px; }
   .header nav a:first-child { display: none; }
-  .hero { min-height: 0; padding-bottom: 40px; }
-  .hero-copy { width: 100%; padding: 33px 7% 0; text-align: center; }
-  .hero-place { font-size: 10px; margin-bottom: 19px; }
-  .hero h1 { width: 270px; margin: 0 auto 13px; }
-  .hero-title { font-size: 18px; line-height: 1.6; letter-spacing: .08em; margin-bottom: 14px; }
-  .event-date { max-width: none; justify-content: center; flex-wrap: nowrap; gap: 8px; margin: 18px 0 14px; }
+  .hero { display: flex; flex-direction: column; min-height: 0; padding: 18px 0 18px; text-align: center; }
+  .hero-copy { display: contents; }
+  .hero-place { order: 0; font-size: 10px; margin: 0 7% 10px; }
+  .hero h1 { order: 1; width: 205px; margin: 0 auto 8px; }
+  .hero-title { order: 2; font-size: 16px; line-height: 1.6; letter-spacing: .08em; margin: 0 7% 8px; }
+  .event-date { order: 3; max-width: none; justify-content: center; flex-wrap: nowrap; gap: 8px; margin: 8px 0 10px; }
   .event-date>strong { font-size: 47px; }
   .event-year { font-size: 15px; }
   .event-time { font-size: 13px; }
   .event-day { width: 21px; height: 21px; font-size: 11px; }
-  .hero-description { font-size: 11px; line-height: 2; margin: 15px 0 18px; }
-  .hero .button { min-width: 216px; min-height: 50px; font-size: 12px; padding: 11px 25px; gap: 36px; margin: 4px 0 24px; }
-  .hero-landscape { position: relative; width: 100%; max-width: 570px; aspect-ratio: 1697 / 1760; margin: 0 auto; top: 0; right: auto; }
+  .hero-description { order: 5; font-size: 11px; line-height: 2; margin: 10px 7% 14px; }
+  .hero .button { order: 6; align-self: center; min-width: 216px; min-height: 50px; font-size: 12px; padding: 11px 25px; gap: 36px; margin: 0 0 12px; }
+  .hero-landscape { order: 4; position: relative; width: 100%; max-width: 570px; aspect-ratio: 1697 / 1760; margin: 0 auto; top: 0; right: auto; }
   .hero-landscape { mask-image: none; }
-  .hero-flyer-link { left: auto; right: 7%; bottom: 13px; font-size: 10px; min-height: 36px; gap: 18px; }
+  .hero-flyer-link { order: 7; position: static; align-self: center; font-size: 10px; min-height: 36px; gap: 18px; }
   .ribbon { padding: 13px 0; }
   .ribbon-item { font-size: 8px; padding: 0 25px; }
   .ribbon-item>span { margin-left: 50px; }
@@ -381,7 +382,7 @@ footer>small { font-size: 9px; color: var(--muted); margin-left: auto; white-spa
   footer>small { margin-left: 0; width: 100%; }
 }
 @media (max-width: 360px) {
-  .hero h1 { width: 240px; }
+  .hero h1 { width: 190px; }
   .event-date { gap: 6px; }
   .event-date>strong { font-size: 42px; }
   .event-time { font-size: 12px; }

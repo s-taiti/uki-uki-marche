@@ -1,7 +1,7 @@
 import ExperienceGuide, { MotionDetails } from './experience-guide';
 import { RiverArt } from './river-art';
 
-const mapUrl = 'https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E5%AA%9B%E7%9C%8C%E5%A4%A7%E6%B4%B2%E5%B8%82%20%E3%81%97%E3%82%8D%E3%81%97%E3%81%9F%E3%81%8B%E3%82%8F%E3%81%BF%E3%81%AA%E3%81%A8';
+const mapUrl = 'https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%82%8D%E3%81%97%E3%81%9F%E3%81%8B%E3%82%8F%E3%81%BF%E3%81%AA%E3%81%A8';
 
 export default function Home() {
   return <>
@@ -85,7 +85,7 @@ export default function Home() {
       <section id="access" className="access">
         <div className="section">
           <div className="access-heading" data-reveal><p className="section-label">会場・アクセス</p><h2>会場は、<br className="mobile-break"/>肱川橋のたもと。</h2></div>
-          <div className="access-grid" data-reveal><div><p className="location">愛媛県大洲市<br/><strong>しろしたかわみなと</strong></p><p>2026年9月27日（日）10:00〜16:00</p><a className="button light" href={mapUrl} target="_blank" rel="noreferrer">しろしたかわみなとを地図で見る <span aria-hidden="true">↗</span></a></div><div className="parking"><h3>駐車場のご案内</h3><p><strong>大洲市立体駐車場</strong><br/>大洲市大洲1034</p><p><strong>大洲高等学校グラウンド</strong><br/>大洲市大洲737</p><p className="note">当日は現地の案内に従ってご利用ください。</p></div></div>
+          <div className="access-grid" data-reveal><div><p className="location">愛媛県大洲市<br/><strong>しろしたかわみなと</strong></p><p>2026年9月27日（日）10:00〜16:00</p><a className="button light" href={mapUrl} target="_blank" rel="noreferrer">かわみなと <span aria-hidden="true">↗</span></a></div><div className="parking"><h3>駐車場のご案内</h3><p><strong>大洲市立体駐車場</strong><br/>大洲市大洲1034</p><p><strong>大洲高等学校グラウンド</strong><br/>大洲市大洲737</p><p className="note">当日は現地の案内に従ってご利用ください。</p></div></div>
         </div>
       </section>
       <section className="section contact" data-reveal><div><h2>お問い合わせ</h2><p>主催：一般社団法人かわまちコネクト<br/>（しろしたテラス指定管理者）</p><a className="text-link" href="https://www.instagram.com/shiroshita_terrace.ozu/" target="_blank" rel="noopener noreferrer">しろしたテラス Instagram <span aria-hidden="true">↗</span></a></div><div><a className="phone" href="tel:0893577500">0893-57-7500 <span aria-hidden="true">↗</span></a><a className="email" href="mailto:admin@kwmcc.or.jp">admin@kwmcc.or.jp <span aria-hidden="true">↗</span></a><p className="note">住所：愛媛県大洲市大洲1番地5 しろしたテラス</p></div></section>
