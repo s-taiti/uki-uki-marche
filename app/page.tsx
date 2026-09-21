@@ -1,10 +1,12 @@
 import ExperienceGuide, { MotionDetails } from './experience-guide';
 import { RiverArt } from './river-art';
+import EventData from './event-data';
 
 const mapUrl = 'https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%82%8D%E3%81%97%E3%81%9F%E3%81%8B%E3%82%8F%E3%81%BF%E3%81%AA%E3%81%A8';
 
 export default function Home() {
   return <>
+    <EventData />
     <a className="skip" href="#main">本文へ移動</a>
     <header className="header">
       <a className="brand" href="#" aria-label="Uki Uki Marche トップ"><img src="/images/uki-uki-logo.png" alt="Uki Uki Marche" width="590" height="295" /></a>

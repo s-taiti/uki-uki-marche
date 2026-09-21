@@ -37,3 +37,13 @@ SUPレースはチラシ裏面のQRコードから確認したGoogleフォーム
 
 イラストの出典と画像編集の記録は `ILLUSTRATION-NOTES.md` に記載しています。
 端末で「視差効果を減らす」などの設定が有効な場合、登場アニメーションと流れる帯を停止します。
+
+## 検索・セキュリティ設定
+- 正規URL・検索説明・SNS共有画像：app/layout.tsx
+- イベント構造化データ：app/event-data.tsx（開催日・場所を変更したら本文と一緒に更新）
+- robots.txt・sitemap.xml：app/robots.ts、app/sitemap.ts
+- 保護ヘッダー：next.config.ts（CSPは埋め込み等への限定的な保護で、厳格なscript-src制限ではありません）
+- Dependabotが週1回更新PRを提案します。自動マージはしません。
+- Google Search Consoleへの所有権確認・サイトマップ送信は別途必要です。検索掲載や順位は保証されません。
+- 2026-09-21：pnpm auditで既知の脆弱性0件。定期的な再確認を推奨します。
+
