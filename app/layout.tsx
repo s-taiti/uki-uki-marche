@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://uki-uki-marche.vercel.app'),
   title, description,
   alternates: { canonical: '/' },
+  verification: { google: '4HUx9Jh7ImjYe0K9y7S98AB-urqNkHEEbIINTGkur-0' },
   openGraph: { type: 'website', locale: 'ja_JP', url: '/', siteName: 'Uki Uki Marche 水上マルシェ', title, description,
     images: [{ url: '/images/flyer-front.webp', width: 1284, height: 1800, alt: '水上マルシェの公式チラシ' }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/images/flyer-front.webp'] },
