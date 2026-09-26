@@ -14,13 +14,23 @@ export default function Home() {
     </header>
     <main id="main">
       <MotionDetails />
+      <section className="event-notice" aria-labelledby="notice-title">
+        <p className="section-label">2026年9月26日 更新</p>
+        <h2 id="notice-title">縮小開催のお知らせ</h2>
+        <p className="notice-date">2026年9月27日（日）10:00〜16:00<br/>会場：しろしたかわみなと（肱川橋周辺）</p>
+        <p>一部内容を変更して開催します。</p>
+        <p>カヌー・SUP体験、SUPレース、はんぎり体験・競漕は予定どおり開催します。</p><div className="notice-columns">
+          <div><h3>開催内容</h3><ul><li>水上マーケット（屋形船）</li><li>HANAGA（肉）</li><li>ぷらいまりぃ（野菜・フルーツ）</li><li>KUUKAI（焼き鳥）</li><li>音楽ライブ</li></ul></div>
+          <div><h3>今回はお休みする内容</h3><ul><li>キッチンカー</li><li>鮎の塩焼き</li><li>クラフトコーラそぶる</li></ul></div>
+        </div>
+      </section>
       <section className="hero" aria-labelledby="event-title">
         <div className="hero-copy">
           <p className="hero-place">愛媛県大洲市・肱川橋周辺</p>
           <h1 id="event-title"><img src="/images/uki-uki-logo.png" alt="Uki Uki Marche" width="590" height="295" fetchPriority="high" /></h1>
           <p className="hero-title">水上を遊びつくす<br/>ウキウキマルシェ</p>
           <div className="event-date"><span className="event-year">2026</span><strong>9.27</strong><span className="event-day">日</span><span className="event-time">10:00<span>—</span>16:00</span></div>
-          <p className="hero-description">浮亀橋でお買い物。カヌーに、はんぎり。<br/>肱川の上で過ごす、一日限りのマルシェ。</p>
+          <p className="hero-description">屋形船の水上マーケットと音楽ライブ。<br/>一部内容を変更して開催します。</p>
           <a className="button" href="#experiences">当日の楽しみ方 <span aria-hidden="true">↓</span></a>
         </div>
         <div className="hero-landscape">
@@ -43,10 +53,10 @@ export default function Home() {
       </section>
       <div className="ribbon" aria-hidden="true"><div className="ribbon-track">{[0, 1].map(copy => <div className="ribbon-group" key={copy}>{[0, 1, 2].map(item => <div className="ribbon-item" key={item}>RIVER · FOOD · MUSIC · ADVENTURE <span>UKI UKI MARCHE</span></div>)}</div>)}</div></div>
       <section id="about" className="section about">
-        <div data-reveal><p className="section-label">水上マルシェについて</p><h2>川の上で楽しむ、<br/>大洲の休日。</h2><p className="about-caption">水上の桟橋で、お買い物。<br/>川辺に集まる、食と音楽。</p></div>
+        <div data-reveal><p className="section-label">水上マルシェについて</p><h2>川の上で楽しむ、<br/>大洲の休日。</h2><p className="about-caption">屋形船の水上マーケット。<br/>川辺に集まる、食と音楽。</p></div>
         <div className="about-body" data-reveal>
-          <p>かつて、舟を並べた「浮亀橋」が架かっていた肱川。今回は水上の桟橋でマルシェを楽しめます。川辺にはキッチンカーや音楽ライブも集まります。</p>
-          <p>カヌーやSUPで水面をすべったり、昔ながらのはんぎりに乗ってみたり。いつもと少し違う、大洲の川辺をお楽しみください。</p>
+          <p>かつて、舟を並べた「浮亀橋」が架かっていた肱川。今回は一部内容を変更し、屋形船の水上マーケットと音楽ライブなどを開催します。</p>
+          <p>HANAGA（肉）、ぷらいまりぃ（野菜・フルーツ）、KUUKAI（焼き鳥）が出店します。大洲の川辺で、お買い物と音楽をお楽しみください。</p>
           <details className="history-detail"><summary>浮亀橋って、どんな橋？</summary><p>川舟を並べて板を渡した、珍しい舟橋。大正2年に肱川橋が完成するまで、肱南と肱北地区を結んでいました。遠くから見た橋の形が亀の背に似ていたことが、名前の由来です。</p></details>
         </div>
       </section>
@@ -56,8 +66,8 @@ export default function Home() {
           <div className="experience-visual" data-reveal="art"><RiverArt kind="market" /></div>
           <div className="experience-copy" data-reveal>
             <p className="experience-index">01 <span>お買い物と音楽</span></p>
-            <h3><ruby>浮亀橋<rt>うききばし</rt></ruby><br/>水上マルシェ</h3>
-            <p>舟橋を渡って、水上でお買い物。<br className="desktop-break"/>キッチンカーや大洲名物・鮎の塩焼き、<br className="desktop-break"/>音楽ライブも楽しめます。</p>
+            <h3>水上マーケット<br/>（屋形船）</h3>
+            <p>屋形船の水上マーケットと音楽ライブを開催します。<br/>HANAGA（肉）／ぷらいまりぃ（野菜・フルーツ）／KUUKAI（焼き鳥）</p>
             <div className="experience-meta">イベントMC<br/><strong>愛媛のエンターテイナー たいき</strong></div>
           </div>
         </article>

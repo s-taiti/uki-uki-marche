@@ -199,6 +199,19 @@ section, article[id] { scroll-margin-top: 28px; }
 body:has(.poster-dialog[open]) { overflow: hidden; }
 
 .access { background: var(--blue); color: white; }
+.event-notice { max-width: 1100px; margin: 28px auto; padding: 28px 34px; border-top: 6px solid #edda43; background: #fffdf2; color: var(--blue); }
+.event-notice .section-label { margin-bottom: 8px; }
+.event-notice h2 { font-size: clamp(23px, 4vw, 32px); margin-bottom: 16px; }
+.event-notice > p { font-size: 14px; line-height: 1.9; margin-bottom: 10px; }
+.event-notice .notice-date { font-weight: 600; }
+.notice-columns { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; margin-top: 22px; }
+.notice-columns h3 { font-size: 17px; padding-bottom: 8px; border-bottom: 1px solid #cbd7df; }
+.notice-columns ul { padding-left: 1.3em; margin: 12px 0 0; font-size: 14px; line-height: 1.9; }
+@media (max-width: 760px) {
+  .event-notice { margin: 18px 5%; padding: 20px; }
+  .event-notice > p, .notice-columns ul { font-size: 13px; }
+  .notice-columns { grid-template-columns: 1fr; gap: 20px; }
+}
 .access a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font: inherit !important; }
 .access .section { padding-top: 80px; padding-bottom: 80px; }
 .access h2, .access h3, .access .section-label { color: white; }

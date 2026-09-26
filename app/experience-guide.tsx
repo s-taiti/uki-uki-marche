@@ -59,7 +59,7 @@ export default function ExperienceGuide() {
         <p className="schedule-notice">当日の状況により、時間や内容を変更する場合があります。</p>
         <details className="history-detail"><summary>はんぎりの歴史</summary><p>江戸時代から昭和にかけて、松前町で盛んだった地引網漁。漁師が沖の船と岸を行き来したり、小魚を運んだりするときに、はんぎりを巧みに操って水上を移動していました。</p></details>
       </article>
-      <div className="guide-side"><article className="flyer-feature" id="flyers" data-reveal><div className="flyer-feature-copy"><p className="section-label">イベント案内</p><h3>公式チラシ</h3><p>画像をタップすると、表・裏を拡大してご覧いただけます。</p></div><FlyerViewer /></article>
+      <div className="guide-side"><article className="flyer-feature" id="flyers" data-reveal><div className="flyer-feature-copy"><p className="section-label">イベント案内</p><h3>公式チラシ</h3><p>変更前のチラシです。キッチンカー・鮎の塩焼き・クラフトコーラそぶるは今回はお休みです。最新の開催内容はページ上部のお知らせをご確認ください。画像をタップすると拡大できます。</p></div><FlyerViewer /></article>
       <aside className="river-kit"><div><p className="section-label">体験に参加される方へ</p><h3>服装・持ち物</h3></div><div><span className="kit-number">01</span><strong>ぬれてもよい服装</strong><p>靴やサンダルも、ぬれてよいものをご用意ください。</p></div><div><span className="kit-number">02</span><strong>ライフジャケット</strong><p>貸し出しがあります。</p></div></aside></div></div>
     </div>
   </section>;
