@@ -66,7 +66,7 @@ export default function Home() {
           <div className="experience-visual" data-reveal="art"><RiverArt kind="market" /></div>
           <div className="experience-copy" data-reveal>
             <p className="experience-index">01 <span>お買い物と音楽</span></p>
-            <h3>水上マーケット<br/>（屋形船）</h3>
+            <h3>水上マーケット<br/><span className="market-boat-label">（屋形船）</span></h3>
             <p>屋形船の水上マーケットと音楽ライブを開催します。<br/>HANAGA（肉）／ぷらいまりぃ（野菜・フルーツ）／KUUKAI（焼き鳥）</p>
             <div className="experience-meta">イベントMC<br/><strong>愛媛のエンターテイナー たいき</strong></div>
           </div>

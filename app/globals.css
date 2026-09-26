@@ -336,7 +336,8 @@ footer>small { font-size: 9px; color: var(--muted); margin-left: auto; white-spa
   .experience-index { font-size: 12px; margin-bottom: 14px; gap: 13px; }
   .experience-index>span { font-size: 10px; padding-left: 13px; }
   .experience-copy h3 { font-size: 28px; line-height: 1.55; margin-bottom: 14px; }
-  .market-row .experience-copy h3 br { display: none; }
+  .market-row .experience-copy h3 br { display: block; }
+  .market-boat-label { white-space: nowrap; }
   .experience-copy rt { font-size: 9px; }
   .experience-copy>p:not(.experience-index) { font-size: 13px; line-height: 2.1; margin-bottom: 16px; }
   .experience-meta { font-size: 10px; padding-top: 10px; border-color: #e8edf0; }
